@@ -14,6 +14,14 @@ const (
 	ParcelStatusDelivered  = "delivered"
 )
 
+type Parcel struct {
+	Number    int
+	Client    int
+	Status    string
+	Address   string
+	CreatedAt string
+}
+
 type ParcelService struct {
 	store ParcelStore
 }
